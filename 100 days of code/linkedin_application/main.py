@@ -3,9 +3,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
 
-EMAIL="midnightstar22072004@gmail.com"
-PASSWORD="Marcomarco2223!"
-PHONE="5893420842"
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_experimental_option("detach", True)
 
