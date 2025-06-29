@@ -33,9 +33,7 @@ driver = webdriver.Chrome(options=chrome_options)
 for n in range(len(all_links)):
     driver.get("https://docs.google.com/forms/d/e/1FAIpQLSepl6_FwUcHhDknTqn5r6Zk-AsGBoTKA9zKbJSPNlKwQ_RZxw/viewform?usp=dialog")
     time.sleep(2)
-
-    # Use the xpath to select the "short answer" fields in your Google Form.
-    # Note, your xpath might be different if you created a different form.
+\
     address = driver.find_element(by=By.XPATH,
                                   value='//*[@id="mG61Hd"]/div[2]/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div/div[1]/input')
     price = driver.find_element(by=By.XPATH,
